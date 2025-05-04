@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace Clustering Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="cluster-info">
+            <div class="info-row">
+                <label for="display-mode">Display Mode:</label>
+                <select id="display-mode">
+                    <option value="single">Single Cluster</option>
+                    <option value="dual">Dual Clusters</option>
+                </select>
+                <label for="cluster-filter">Cluster 1:</label>
+                <select id="cluster-filter"><option value="all">All Clusters</option></select>
+                <div id="second-cluster-filter" style="display: none;">
+                    <label for="cluster-filter-2">Cluster 2:</label>
+                    <select id="cluster-filter-2"><option value="none">Select Cluster</option></select>
+                </div>
+            </div>
+        </div>
+        <div id="cluster-overview"></div>
+        <div id="process-graph"></div>
+        <div id="legend"></div>
+        <div id="cluster-detail"></div>
+    </div>
+    <script src="d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
